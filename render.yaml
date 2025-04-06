@@ -1,0 +1,12 @@
+# render.yaml
+
+services:
+  - type: web
+    name: lyrixbot
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python app.py"
+    envVars:
+      - key: GENIUS_ACCESS_TOKEN
+        value: Zy31hHGwyHWgGusNTNpQnoSZQLJO4AvuuFTJBAK-KSBIGjGkfG8J_-rptg20PHVH
+    plan: free
